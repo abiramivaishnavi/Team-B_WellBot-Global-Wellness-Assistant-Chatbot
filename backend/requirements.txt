@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+supabase-py
+python-dotenv
+pydantic
+pydantic-settings
+httpx
+google-generativeai
+flask
+flask-cors
+google-genai
+python-dotenv
