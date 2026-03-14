@@ -1,11 +1,22 @@
-# Node
+# Node & Frontend
 node_modules/
 dist/
+dist-ssr/
 .pro/
 *.mjs
 *.ts.timestamp-*
+.eslintcache
 
-# Python
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Python & Backend
 __pycache__/
 *.py[cod]
 *$py.class
@@ -13,8 +24,11 @@ venv/
 .venv/
 env/
 .env
+db.sqlite3
+.pytest_cache/
 
-# Environments
+# Environment Secrets (Crucial)
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -22,12 +36,13 @@ env/
 backend/.env
 project/.env
 
-# IDEs
+# IDEs & System
 .vscode/
+!.vscode/extensions.json
 .idea/
 .DS_Store
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
