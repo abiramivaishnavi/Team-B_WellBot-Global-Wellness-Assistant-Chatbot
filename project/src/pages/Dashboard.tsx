@@ -118,7 +118,7 @@ export default function Dashboard() {
           }`}
       >
         <ChevronLeft size={16} className={`transition-transform duration-300 ${collapsed ? 'rotate-180' : ''}`} />
-        {!collapsed && 'Minimize'}
+        {collapsed ? 'v2.1' : 'v2.1 - Minimize'}
       </button>
     </>
   );

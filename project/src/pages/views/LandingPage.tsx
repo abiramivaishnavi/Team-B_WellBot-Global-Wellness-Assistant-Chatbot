@@ -101,7 +101,7 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
                                 color: 'text-blue-500',
                                 bg: 'bg-blue-100',
                                 title: 'Multi-language Support',
-                                desc: 'Experience WellBot in your native language. Fully supported in English, Hindi, and Telugu.'
+                                desc: 'Experience WellBot in your native language. Fully supported in English and Hindi.'
                             },
                             {
                                 icon: Shield,
