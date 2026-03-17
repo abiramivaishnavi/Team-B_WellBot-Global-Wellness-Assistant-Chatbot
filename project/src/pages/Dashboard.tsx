@@ -19,20 +19,19 @@ type View = 'Overview' | 'Nutrition' | 'Health Reports' | 'Chat' | 'Stress Track
 
 const SIDEBAR_ITEMS: { id: View; icon: any; label: string; highlight?: boolean }[] = [
   { id: 'Overview', icon: LayoutGrid, label: 'Overview' },
+  { id: 'Chat', icon: MessageSquare, label: 'Chat', highlight: true },
   { id: 'Nutrition', icon: Apple, label: 'Nutrition' },
   { id: 'Health Reports', icon: FileText, label: 'Health Reports' },
   { id: 'Stress Tracker', icon: Brain, label: 'Stress Tracker' },
   { id: 'Recommendations', icon: Sparkles, label: 'Recommendations' },
   { id: 'Daily Check-In', icon: CalendarCheck, label: 'Daily Check-In' },
   { id: 'Feedback', icon: Star, label: 'Feedback' },
-  { id: 'Chat', icon: MessageSquare, label: 'Chat', highlight: true },
   { id: 'Profile', icon: User, label: 'Profile' },
 ];
 
 const LANGUAGES = [
   { code: 'en', flag: '🇺🇸', label: 'EN' },
   { code: 'hi', flag: '🇮🇳', label: 'HI' },
-  { code: 'te', flag: '🇮🇳', label: 'TE' },
 ];
 
 export default function Dashboard() {
@@ -97,9 +96,9 @@ export default function Dashboard() {
 
       {/* Nav */}
       <nav className="flex-1 space-y-1">
-        {SIDEBAR_ITEMS.slice(0, 7).map(item => <SidebarItem key={item.id} item={item} />)}
+        {SIDEBAR_ITEMS.slice(0, 8).map(item => <SidebarItem key={item.id} item={item} />)}
         <div className={`h-px mx-3 my-3 ${darkMode ? 'bg-slate-700' : 'bg-slate-100'}`} />
-        {SIDEBAR_ITEMS.slice(7).map(item => <SidebarItem key={item.id} item={item} />)}
+        {SIDEBAR_ITEMS.slice(8).map(item => <SidebarItem key={item.id} item={item} />)}
       </nav>
 
       {/* Logout */}

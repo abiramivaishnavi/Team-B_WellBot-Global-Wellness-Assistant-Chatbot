@@ -7,7 +7,6 @@ interface ProfileViewProps { darkMode: boolean; setDarkMode: (v: boolean) => voi
 const languages = [
   { code: 'en', label: 'English', flag: '🇺🇸' },
   { code: 'hi', label: 'हिंदी', flag: '🇮🇳' },
-  { code: 'te', label: 'తెలుగు', flag: '🇮🇳' },
 ];
 
 export default function ProfileView({ darkMode, setDarkMode }: ProfileViewProps) {

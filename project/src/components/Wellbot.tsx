@@ -22,10 +22,7 @@ const Wellbot = ({ defaultOpen = false, inline = false }: WellbotProps) => {
 
   const languages = [
     { name: 'English', code: 'en', flag: '🇺🇸' },
-    { name: 'Hindi', code: 'hi', flag: '🇮🇳' },
-    { name: 'Telugu', code: 'te', flag: '🇮🇳' },
-    { name: 'Spanish', code: 'es', flag: '🇪🇸' },
-    { name: 'French', code: 'fr', flag: '🇫🇷' }
+    { name: 'Hindi', code: 'hi', flag: '🇮🇳' }
   ];
 
   useEffect(() => {
@@ -99,9 +96,8 @@ const Wellbot = ({ defaultOpen = false, inline = false }: WellbotProps) => {
               <button
                 key={lang.code}
                 onClick={() => setLanguage(lang.name)}
-                className={`flex flex-col items-center py-1.5 rounded-lg transition-all ${
-                  language === lang.name ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-400 hover:bg-slate-700'
-                }`}
+                className={`flex flex-col items-center py-1.5 rounded-lg transition-all ${language === lang.name ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-400 hover:bg-slate-700'
+                  }`}
               >
                 <span className="text-sm">{lang.flag}</span>
                 <span className="text-[9px] font-bold mt-0.5">{lang.name.toUpperCase()}</span>
@@ -114,11 +110,10 @@ const Wellbot = ({ defaultOpen = false, inline = false }: WellbotProps) => {
           {messages.map((msg: any) => (
             <div key={msg.id} className={`flex ${msg.type === 'user' ? 'justify-end' : 'justify-start'}`}>
               <div className="max-w-[90%]">
-                <div className={`p-5 rounded-3xl shadow-sm text-lg leading-relaxed ${
-                  msg.type === 'user'
+                <div className={`p-5 rounded-3xl shadow-sm text-lg leading-relaxed ${msg.type === 'user'
                     ? 'bg-indigo-600 text-white rounded-tr-none'
                     : 'bg-white text-slate-800 border border-slate-100 rounded-tl-none'
-                }`}>
+                  }`}>
                   {String(msg.text || '').split('\n').map((line: string, i: number) => (
                     <div key={i} className="mb-2 last:mb-0">
                       {line.split(/(\*\*.*?\*\*)/g).map((part: string, j: number) => {
