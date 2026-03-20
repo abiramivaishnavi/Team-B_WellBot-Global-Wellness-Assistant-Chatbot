@@ -41,6 +41,17 @@ WellBot helps users take charge of their physical and mental wellbeing through:
 
 ---
 
+## 👥 Team Members
+
+- **Tejal Rathi** served as the Project Lead and Full Stack Developer, overseeing the project architecture and integration.
+- **J Yuva Naga Meghana** worked as a Frontend Developer, contributing to the user interface design.
+- **M Abirami** acted as a Frontend Developer and handled the technical documentation for the project.
+- **Prajwal Patil** contributed as a Frontend Developer, focusing on building user-facing components.
+- **Sai Jyoshna** was responsible for the project's documentation and visual materials.
+- **Bhanu Prasad** implemented the secure authentication systems and managed the final project presentation.
+  
+---
+
 ## 📁 Project Structure
 
 ```
