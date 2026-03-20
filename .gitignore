@@ -34,7 +34,7 @@ db.sqlite3
 .env.test.local
 .env.production.local
 backend/.env
-project/.env
+frontend/.env
 
 # IDEs & System
 .vscode/

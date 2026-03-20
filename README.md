@@ -66,7 +66,7 @@ WellBot helps users take charge of their physical and mental wellbeing through:
 │   ├── requirements.txt
 │   └── .env                    # Backend environment variables
 │
-└── project/                    # React frontend
+└── frontend/                    # React frontend
     └── src/
         ├── pages/
         │   ├── Dashboard.tsx       # Main app dashboard shell
@@ -141,11 +141,11 @@ The API will be available at: `http://localhost:8000`
 ### 3. Frontend Setup
 
 ```bash
-cd project
+cd frontend
 npm install
 ```
 
-Create a `.env` file inside the `project/` directory:
+Create a `.env` file inside the `frontend/` directory:
 
 ```env
 VITE_SUPABASE_URL=https://your-project.supabase.co
